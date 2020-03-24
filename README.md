@@ -21,3 +21,5 @@ pip3 install -r requirements.txt
 ```
 python3 index.py
 ```
+
+5. Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) and follow the given instructions.

@@ -19,12 +19,12 @@
     <h3></h3>
     <br>
     <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-8">
     <div class="instructions">
       <h2>Instructions: </h2>
       <p>1. Select model and labelling type</p>
-      <p>2. Upload image</p>
-      <p>3. Press Submit</p>
+      <p>2. Upload Image</p>
+      <p>3. Press Submit and Wait</p>
     </div>
     <br>
     <br>
@@ -35,6 +35,7 @@
           <input type="radio" name="model" id="option1" value="resnet"> Resnet </input>
           <input type="radio" name="model" id="option2" value="densenet"> DenseNet </input>
           <input type="radio" name="model" id="option3" value="vgg"> VGG </input>
+          <input type="radio" name="model" id="option3" value="ssdMobilenet"> SSD MobileNet </input>
         </div>
       </div>
       <div class="form-group">
@@ -57,19 +58,19 @@
       </div>
     </form>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <h2 class="result">Result</h2>
       <label for="pred_score">Predicted Score : </label>
       <textarea id="pred_score">{{score}}</textarea><br>
       <label for="pred_label">Predicted Label : </label>
       <textarea id="pred_label">{{predicted_label}}</textarea>
-      <img id="output" width="200" />
+      <img id="output" src="{{url_for('static', filename=resultImage)}}" width="300" />
     </div>
    </div> 
   </div>
 </div>
 
-<!-- Footer -->
+
 <footer class="page-footer font-small blue">
 
   <div class="footer-copyright text-center py-3">
@@ -79,7 +80,6 @@
   </div>
 
 </footer>
-<!-- Footer -->
 
 
   </body>

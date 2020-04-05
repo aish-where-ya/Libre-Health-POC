@@ -7,7 +7,6 @@ from keras.preprocessing.image import array_to_img
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
-import cv2
 import os
 os.environ['CUDA_VISIBLE_DEVICES']=''
 

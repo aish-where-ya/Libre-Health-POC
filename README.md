@@ -1,6 +1,7 @@
 # Libre-Health-POC
 
-To deploy on local machine -
+## To deploy on local machine -
+
 Use of a virtual environment is recommended.
 
 1. Clone this repository
@@ -25,7 +26,10 @@ python3 index.py
 
 5. Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) and follow the given instructions.
 
-Images of the UI - 
+## Note
+The `requirements.txt` file installs `tensorflow==2.1.0`. This installation removes `tensorflow==1.15`. Please reinstall `tensorflow==1.15` using pip3 after running `pip3 install -r requirements.txt` so that both the versions of tensorflow are available for use.
+
+## Images of the UI - 
 1. Screen to enter details and upload X-Ray image.
 ![Screenshot from 2020-03-30 02-32-29](https://user-images.githubusercontent.com/32825331/78450970-1a852600-76a0-11ea-8436-834f2e882d0c.png)
 2. Screen after prediction of the disease. (SSD Mobilenet shown in the picture)

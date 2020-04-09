@@ -27,7 +27,7 @@ python3 index.py
 5. Navigate to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) and follow the given instructions.
 
 ## Note
-The `requirements.txt` file installs `tensorflow==2.1.0`. This installation removes `tensorflow==1.15`. Please reinstall `tensorflow==1.15` using pip3 after running `pip3 install -r requirements.txt` so that both the versions of tensorflow are available for use.
+The `requirements.txt` file installs `tensorflow==2.1.0`. This installation removes `tensorflow==1.15`. Please reinstall `tensorflow==1.15` using `pip3 install tensorflow==1.15` after `requirements.txt` has been installed so that both the versions of tensorflow are available for use.
 
 ## Images of the UI - 
 1. Screen to enter details and upload X-Ray image.
